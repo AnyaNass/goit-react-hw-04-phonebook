@@ -12,7 +12,7 @@ export const ContactsList = ({ state, deleteContact }) => {
 						<Info>{item.name}:</Info>
 						<Info>{item.number}</Info>
 					</ItemInfo>
-					<DeleteButton type="button" onClick={(e) => deleteContact(item.id)}><FaRegTrashAlt /></DeleteButton>
+					<DeleteButton type="button" onClick={() => deleteContact(item.id)}><FaRegTrashAlt /></DeleteButton>
 				</ListItem>
 			})}
 		</List >
