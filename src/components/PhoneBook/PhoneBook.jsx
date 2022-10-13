@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import PropTypes from 'prop-types';
 import { FaUserAlt, FaPhoneAlt, FaUserPlus } from 'react-icons/fa';
 import { Form, FormWrapper, FormField, FormLable, AddButton } from './PhoneBook.styled'
 
@@ -57,3 +58,7 @@ export function PhoneBook({ onSubmit }) {
 		</Form >
 	)
 };
+
+PhoneBook.propTypes = {
+	onSubmit: PropTypes.func,
+}
